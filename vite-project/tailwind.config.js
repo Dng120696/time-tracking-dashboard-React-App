@@ -13,6 +13,7 @@ export default {
         "soft-orange": "hsl(43, 84%, 65%)",
         "very-dark-blue": "hsl(226, 43%, 10%)",
         "dark-blue": "hsl(235, 46%, 20%)",
+        "dark-blue-hover": "hsl(235, 46%, 35%)",
         "desaturated-blue": "hsl(235, 45%, 61%)",
         "pale-blue": "hsl(236, 100%, 87%)",
       },

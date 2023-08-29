@@ -34,7 +34,7 @@ body {
   @apply flex items-center justify-center lg:flex-col lg:items-start gap-6 bg-blue rounded-3xl p-10 lg:pb-20;
 }
 .main__img {
-  @apply w-24 h-24 border-white border-[2px] rounded-full;
+  @apply w-24 h-24 border-white border-[3px] rounded-full;
 }
 .img__info {
   @apply font-medium;
@@ -49,7 +49,7 @@ body {
   @apply flex items-center justify-between lg:flex-col lg:items-stretch lg:justify-start px-10 lg:gap-10 py-8 flex-auto;
 }
 .item {
-  @apply text-xl lg:text-2xl font-medium text-desaturated-blue;
+  @apply text-xl lg:text-2xl font-medium text-desaturated-blue hover:text-pale-blue hover:cursor-pointer;
 }
 .active {
   @apply text-white;
@@ -94,7 +94,7 @@ body {
 }
 
 .box__header {
-  @apply bg-dark-blue rounded-3xl p-8;
+  @apply bg-dark-blue rounded-3xl p-8 hover:bg-dark-blue-hover;
 }
 .box__header > div {
   @apply flex items-center justify-between;
