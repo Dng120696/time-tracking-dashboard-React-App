@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(226, 43%, 10%);
+}
+.main__container {
+  @apply w-[85vw] sm:w-[50rem] md:w-[60rem] lg:w-[100rem]  mx-auto border-red-400 my-10 flex flex-col gap-8 lg:flex-row;
+}
+.main__box,
+.box {
+  @apply bg-dark-blue rounded-3xl;
+}
+.main__box {
+  @apply flex flex-col lg:w-96;
+}
+
+.main__info {
+  @apply flex items-center justify-center lg:flex-col lg:items-start gap-6 bg-blue rounded-3xl p-10 lg:pb-20;
+}
+.main__img {
+  @apply w-24 h-24 border-white border-[2px] rounded-full;
+}
+.img__info {
+  @apply font-medium;
+}
+.img__info span:first-child {
+  @apply block text-xl text-pale-blue lg:mb-4;
+}
+.img__name {
+  @apply text-4xl lg:text-6xl text-white font-light;
+}
+.link__items {
+  @apply flex items-center justify-between lg:flex-col lg:items-stretch lg:justify-start px-10 lg:gap-10 py-8 flex-auto;
+}
+.item {
+  @apply text-xl lg:text-2xl font-medium text-desaturated-blue;
+}
+.active {
+  @apply text-white;
+}
+.grid__boxes {
+  @apply grid gap-8 md:grid-cols-2 lg:grid-cols-3 flex-auto;
+}
+
+.box {
+  @apply relative pt-14;
+}
+.box::before {
+  content: "";
+  @apply absolute top-0 right-0;
+}
+.box__work {
+  background: url("./images/icon-work.svg") no-repeat top -5px right 1.5rem / 7rem;
+  @apply bg-light-red;
+}
+.box__play {
+  background: url("./images/icon-play.svg") no-repeat top -5px right 1.5rem / 7rem;
+  @apply bg-soft-blue;
+}
+.box__study {
+  background: url("./images/icon-study.svg") no-repeat top -5px right 1.5rem / 7rem;
+  @apply bg-light-red-1;
+}
+.box__exercise {
+  background: url("./images/icon-exercise.svg") no-repeat top right 1.5rem /
+    6rem;
+  @apply bg-lime-green;
+}
+.box__social {
+  background: url("./images/icon-social.svg") no-repeat top -1rem right 1.5rem /
+    7rem;
+  @apply bg-violet;
+}
+.box__self {
+  background: url("./images/icon-self-care.svg") no-repeat top -5px right 1.5rem /
+    5.5rem;
+  @apply bg-soft-orange;
+}
+
+.box__header {
+  @apply bg-dark-blue rounded-3xl p-8;
+}
+.box__header > div {
+  @apply flex items-center justify-between;
+}
+.box__header div:first-child {
+  @apply mb-6 lg:mb-8;
+}
+.box__header div:last-child {
+  @apply flex-col items-start gap-4;
+}
+.box__title {
+  @apply text-white text-2xl;
+}
+.current__time {
+  @apply text-5xl lg:text-7xl text-white font-light lg:mb-4;
+}
+.previous__time {
+  @apply text-xl text-pale-blue;
+}
